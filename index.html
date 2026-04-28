@@ -138,7 +138,6 @@ td:nth-child(3) {
                 <table>
                     <thead>
                         <tr>
-                            <th>N°</th>
                             <th>Títulado</th>
                             <th>Proyecto</th>
                             <th>Nota</th>
@@ -168,7 +167,7 @@ td:nth-child(3) {
                     console.log("Mis datos:", trabajo); // Esto te ayudará a ver tus datos en la consola
                     
                     trabajo.forEach((x) => {
-                        t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.n}</td><td>${x.name}</td><td>${x.title}</td><td>${x.grade}</td><td>${x.tutor}</td></tr>`;
+                        t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.name}</td><td>${x.title}</td><td>${x.grade}</td><td>${x.category}</td><td>${x.tutor}</td></tr>`;
                     });
                 })
                 .catch((error) => {

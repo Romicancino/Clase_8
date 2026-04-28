@@ -168,7 +168,7 @@ td:nth-child(3) {
                     console.log("Mis datos:", trabajo); // Esto te ayudará a ver tus datos en la consola
                     
                     trabajo.forEach((x) => {
-                        t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.n}</td><td>${x.name}</td><td>${x.track}</td><td>${x.group}</td><td>${x.focus}</td></tr>`;
+                        t.innerHTML += `<tr style="${x.ok == 1 ? "background-color: var(--color-iluminadisimo); color: var(--color-oscurisimo)" : ""}"><td>${x.n}</td><td>${x.name}</td><td>${x.title}</td><td>${x.grade}</td><td>${x.tutor}</td></tr>`;
                     });
                 })
                 .catch((error) => {
